@@ -398,46 +398,59 @@ body a {
 
 /* Section Features */
 .features {
-  margin-top: 6rem;
-  display: flex;
-  justify-content: center;
+  padding: 20px;
 }
 
-/* Section Features */
-.features {
-  margin-top: 6rem;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.slideFeat {
-  width: 100%; /* Ensure it spans the full width of the screen */
-  border: 0;
-  margin-top: 2rem; /* Space between feat and slideFeat */
-}
-
-.slideFeat .list {
-  display: flex;
-  width: 100%;
-  min-width: calc(var(--width) * var(--quantity));
+.features .text-center p {
+  width: 80%;
+  color: #6A6A6A;
+  font-size: 1.8vw;
+  font-weight: 400;
   position: relative;
+  z-index: 3;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.slideFeat .card {
-  width: var(--width);
-  height: 200px;
-  position: absolute;
-  left: 100%;
-  animation: autoRun 12s linear infinite;
-  animation-delay: calc((12s / var(--quantity)) * (var(--position) - 1));
+.featContainers {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-@keyframes autoRun {
-  from {
-    left: 100%;
-  }
-  to {
-    left: calc(var(--width) * -1);
-  }
+.text-center {
+  text-align: center;
+}
+
+.featuresCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.25rem;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-text {
+  margin: 0;
 }
