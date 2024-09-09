@@ -573,3 +573,79 @@ body a {
   top: -10px;
   bottom: -10px;
 }
+
+/* Section Portfolio */
+.portfolio {
+  margin-top: 4rem;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Section Team */
+.team {
+  margin-top: 4rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.team h5{
+  margin-top: 2vh;
+  font-weight: 800;
+}
+
+.team p{
+  font-size: 1.2vw;
+}
+
+/* Section Footer */
+/* footer{
+  margin-top: 10vh;
+  background-color: #2D2A71;
+  width: 100%;
+  height: 50vh;
+} */
+
+/* CSS */
+.footer {
+  display: flex;
+  margin-top: 10vh;
+  justify-content: space-between;
+  background-color: #2D2A71;
+  height: 30vh;
+  color: white;
+  padding: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-column p, .footer-column ul {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
